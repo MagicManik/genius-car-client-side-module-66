@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Pricing = () => {
+const Checkout = () => {
     return (
         <div>
             <h1>Please checking your booking</h1>
@@ -8,4 +8,4 @@ const Pricing = () => {
     );
 };
 
-export default Pricing;
+export default Checkout;

@@ -13,6 +13,10 @@ const ManageServices = () => {
                 .then(res => res.json())
                 .then(data => {
                     console.log(data)
+                    if (data.deletedCount > 0) {
+                        const restExpert = experts.filter(expert => expert._id !== id);
+                        setExperts(restExpert);
+                    }
                 })
         }
     }
